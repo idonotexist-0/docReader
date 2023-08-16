@@ -27,6 +27,7 @@ fileSelector.addEventListener("change", () => {
     submitBtn.style.display = "block";
     fileNameDisplay.textContent = 'File name : "' + selectedFile.name + '"';
     submitBtn.addEventListener("click", async () => {
+      document.title = selectedFile.name;
       content.style.display = "flex";
       header.style.display = "none";
       card.style.display = "none";
