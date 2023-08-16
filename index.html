@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Selection</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- external links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap">
+</head>
+<body>
+    <header>
+        <p class="heading">DocReader</p>
+    </header>
+    <main>
+        <div class="card">
+            <p class="context">Read <b>TXT</b> and <b>PDF</b> files anywhere.</p>
+
+            <!-- file selection -->
+            <button class="file-selector-btn">Pick a book</button>
+            <input type="file" class="file-selector" accept=".txt,.pdf" style="display: none;">
+            <p class="file-name-display" style="display: none;"></p>
+            <button class="submit-btn" style="display: none;">Read It</button>
+        </div>
+        <div class="content" style="display: none;">
+            <div class="settings">
+                <h4>still_in_development</h4>
+            </div>
+            <p class="file-content-display"></p>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
